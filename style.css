@@ -5,10 +5,12 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  padding: 0 200px 0 200px;
+
 }
 
 header {
-  padding: 150px;
+
   padding-top: 20px;
 }
 
@@ -39,25 +41,49 @@ nav li {
 .titleNum {
   display: flex;
   justify-content: space-between;
-  padding: 50px 0 50px 0;
+  padding-top: 40px;
 }
 
 .title, .num {
   max-width: 45%;
+  padding-bottom: 0;
+}
+
+.calcHeight {
+  margin-top: 40px;
 }
 
 #lorem {
-  font-size: 4em;
+  font-size: 5em;
   margin: 0;
+  font-weight: bold;
 }
 
 .num {
-  font-size: 80px;
+  font-size: 18em;
+  color: lightgrey;
+  font-weight: bold;
 }
 
-.plantPic img {
-  max-width: 50%;
-  max-height: 5%;
+.plantPic {
+  position: relative;
+  min-height: 300px;
+}
+
+/* .plantPic img {
+  min-width: 600px;
+  max-height: 250px;
+  position: absolute;
+  right: 0;
+} */
+
+.pic {
+  background-image: url(images/plantComp.jpg);
+  height: 95%;
+  width: 70%;
+  position: absolute;
+  right:0;
+  background-size: cover;
 }
 
 .edges {
@@ -65,11 +91,20 @@ nav li {
   justify-content: space-between;
 }
 
+.edges p {
+  border-bottom: 5px solid black;
+  min-width: 100px;
+  padding-bottom: 5px;
+}
+
+.edges p:nth-child(2) {
+  text-align: right;
+}
 
 /* <!--consectetur section--> */
 
 .consectetur {
-  padding: 0 150px 0 150px;
+  padding-top: 50px;
 }
 
 .heading {
@@ -83,7 +118,7 @@ nav li {
 }
 
 .consectetur h2, .epertize h2 {
-  font-size: 1.5em;
+  font-size: 2.5em;
   margin: 0;
   padding: 0;
 }
@@ -94,7 +129,9 @@ nav li {
 }
 
 .iconGrid {
-  padding-top: 100px;
+  padding: 50px 0 50px 0;
+  max-width: 95%;
+  margin: 0 auto;
 }
 
 .gridbold {
@@ -104,6 +141,14 @@ nav li {
 .box {
   display: flex;
   max-width: 30%;
+  max-height: 50%;
+  justify-content: space-between;
+}
+
+.box img {
+  margin-right: 10px;
+  margin-left: 20px;
+  padding-top: 10px;
 }
 
 .gridBox1, .gridBox2 {
@@ -113,7 +158,7 @@ nav li {
 /* epertize section with the pic and text boxes */
 
 .epertizeGrid {
-    padding: 100px 150px 100px 150px;
+    padding: 50px 10px 50px 10px;
     background-color: #E6E7E8;
 }
 
@@ -126,7 +171,7 @@ nav li {
 }
 
 .twoGrid img {
-  max-width: 800px;
+  max-width: 500px;
   max-height: 300px;
 }
 
@@ -135,9 +180,28 @@ nav li {
 
 }
 
+.twoGrid {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
 .gridText {
-  padding-top: 50px;
-  padding-left: 10px;
+  margin-top: 35px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.gridPic, .gridPic1 {
+  margin-top: 35px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.gridPic1 {
+  background-image: url(plantComp.jpg);
+  width: 300px;
+  height: 200px;
+  background-size: cover;
 }
 
 .gridBrief {
@@ -156,7 +220,7 @@ nav li {
 }
 
 .numbz {
-  font-size: 3em;
+  font-size: 8em;
 }
 
 
@@ -166,8 +230,9 @@ nav li {
   min-height: 40vh;
   max-width: 70%;
   text-align: center;
-  padding-top: 30px;
+  padding: 70px 0 100px 0;
   margin: 0 auto;
+
 }
 
 .contButton {
@@ -178,7 +243,7 @@ nav li {
   max-height: 100px;
   max-width: 250px;
   margin: 0 auto;
-  margin-top: 25px;
+  margin-top: 40px;
 }
 
 /* sales ads section */
@@ -298,17 +363,46 @@ nav li {
 
 .ffContact {
   background-color: white;
-  max-width: 450px;
+  width: 90%;
+  height: 40vh;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
   padding-top: 30px;
   padding-bottom: 30px;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.florum {
+  padding-top: 30px;
+  margin-left: 20px;
+}
+
+.clorum {
+  margin-left: 100px;
+  padding-top: 30px;
+}
+
+
+.clorum div {
+  min-height: 50px;
+  max-width: 250px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  line-height: 50px;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  margin-top: 50px;
+
 }
 
 /* footer */
 footer {
   color: white;
   background-color: black;
+  height: 50vh;
 }
 
 .bottom {
@@ -316,23 +410,10 @@ footer {
   padding-top: 30px;
 }
 
-.clorum div {
-  min-height: 75px;
-  max-width: 250px;
-  text-align: center;
-  background-color: black;
-  color: white;
-  margin: 0 auto;
-  padding-top: 30px;
-  text-transform: uppercase;
-  font-size: 0.8em;
-  margin-top: 50px;
-}
-
 .iconz {
   display: flex;
   justify-content: space-between;
-  max-width: 300px;
+  max-width: 250px;
   margin: 0 auto;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -340,12 +421,15 @@ footer {
 }
 
 .iconz p {
-  padding-left: 20px;
+  padding-left: 10px;
+
 }
 
 .blah {
   display: flex;
+
 }
+
 
 .socMed {
   padding-top: 15px;
@@ -354,7 +438,13 @@ footer {
 .list {
   max-width: 200px;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
+  font-size: 0.7em;
+  margin-top: 50px;
+}
+
+.list li {
+  padding-top: 15px;
 }
 
 .list ul {
@@ -393,21 +483,24 @@ footer li:hover {
 .subscribe {
   max-width: 300px;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
   margin-top: 50px;
   padding-bottom: 50px;
   color: darkgrey;
+  font-size: 0.7em;
 }
 
 input {
   padding: 10px;
 }
 .subscribe div {
-  min-width: 200px;
-  min-height: 75px;
+  min-width: 125px;
+  height: 50px;
   color: black;
+  font-weight: bold;
   background-color: white;
-  padding-top: 30px;
+  line-height: 50px;
+  text-align: center;
   font-family: 'Roboto', sans-serif;
   margin-top: 20px;
 
