@@ -22,7 +22,7 @@ nav img {
   max-height: 75px;
 }
 
-nav {
+nav, nav div {
   display: flex;
   justify-content: space-between;
 }
@@ -408,8 +408,11 @@ nav li {
 
 .lorumButton, .lorumButton2 {
     position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 20px;
+    right: 20px;
     bottom: 40px;
-    left: 30px;
 }
 
 /* short lorum section with log and button */
@@ -454,14 +457,14 @@ nav li {
 footer {
   color: white;
   background-color: black;
-  height: 50vh;
+  min-height: 50vh;
 }
 
 .bottom {
   display: flex;
+  flex-direction: row;
   padding-top: 60px;
 }
-
 .iconz {
   display: flex;
   justify-content: space-between;
@@ -542,10 +545,6 @@ footer li:hover {
   font-size: 1.2em;
 }
 
-.bottom {
-  display: flex;
-  flex-direction: row;
-}
 
 .subscribe {
   max-width: 300px;
@@ -592,7 +591,589 @@ input {
 
 }
 
-/* Landscape phones and down */
+/* LANDSCAPE PHONES AND SMALLER */
 @media (max-width: 480px) {
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    padding: 0 15px 0 15px;
+    background-color: rgba(211,211,211,0.7);
+  }
+
+  header {
+    padding: 10px;
+  }
+
+  header, .consectetur, .neque, .ffContact {
+    background-color: white;
+  }
+
+  nav img {
+    max-width: 50px;
+    max-height: 50px;
+    margin-left: 10px;
+    margin-top: 15px;
+
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 20px);
+    margin: 0 auto;
+  }
+
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    padding:0;
+    margin: 0;
+    margin-right: 20px;
+
+  }
+
+  nav li {
+    padding: 10px;
+    height: 40px;
+    width: 48px;
+    font-weight: bold;
+    font-size: 0.7em;
+
+  }
+
+  .titleNum {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    margin-bottom: 20px;
+  }
+
+  #lorem {
+    font-size: 2em;
+    margin: 0;
+    font-weight: bold;
+  }
+
+  .num {
+    font-size: 6em;
+    color: lightgrey;
+    font-weight: bold;
+    padding-top: 20%;
+  }
+
+  .plantPic {
+    min-height: 300px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+
+  .pic {
+    background-image: url(images/plantComp.jpg);
+    height: 95%;
+    width: calc(100% - 5px);
+    margin: 0 auto;
+    background-size: cover;
+  }
+
+  .edges {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .edges p {
+    border-bottom: 3px solid black;
+    min-width: 50px;
+    padding-bottom: 2px;
+  }
+
+  .edges p:nth-child(2) {
+    text-align: right;
+  }
+
+  /* <!--480 and SMALLER consectetur section--> */
+
+  .consectetur {
+    padding: 20px 10px 0px 10px;
+  }
+
+  .heading {
+      max-width: 400px;
+  }
+
+  .headingcons {
+    font-weight: bold;
+    margin: 0;
+    padding: 1.5px;
+  }
+
+  .consectetur h2, .epertize h2 {
+    font-size: 2.5em;
+    margin: 0;
+    padding: 0;
+  }
+
+  .headingpara {
+    margin: 0;
+    padding:1.5px;
+  }
+
+  .iconGrid {
+    padding: 50px 0 50px 0;
+    max-width: 95%;
+    margin: 0 auto;
+  }
+
+  .gridbold {
+    font-weight: bold;
+  }
+
+  .box {
+    display: flex;
+    max-width: 90%;
+    max-height: 50%;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .box img {
+    margin-right: 10px;
+    margin-left: 20px;
+    padding-top: 10px;
+  }
+
+  .gridBox1, .gridBox2 {
+    display: block;
+  }
+
+  /* 480 AND SMALLER epertize section with the pic and text boxes */
+
+  .epertizeGrid {
+      padding: 50px 10px 50px 10px;
+      background-color: #E6E7E8;
+  }
+
+  .epertize {
+    max-width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 20px;
+
+  }
+
+  .gridbox1a, .gridbox2a, .gridbox3, .gridbox4 {
+    display:flex;
+    flex-direction:column;
+
+  }
+
+  .twoGrid {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .gridText {
+    margin-top: 35px;
+    /* min-width: 50%; */
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+
+  .gridPic1, .gridPic2, .gridPic3, .gridPic4 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    min-height: 200px;
+  }
+
+  .gridPic1 {
+    background-image: url("images/christopher-gower-291240.jpg");
+    width: 100%;
+    background-size: cover;
+    margin: 0;
+  }
+
+  .gridPic2 {
+    background-image: url("images/christopher-gower-291240.jpg");
+    width: 100%;
+    background-size: cover;
+    margin: 0;
+  }
+
+  .gridPic3 {
+    background-image: url("images/christopher-gower-291246.jpg");
+    width: 100%;
+    background-size: cover;
+    margin-top: 15px;
+  }
+
+  .gridPic4 {
+      background-image: url("images/christopher-gower-291239.jpg");
+      width: 100%;
+      background-size: cover;
+      margin: 0;
+  }
+
+  .marginleft {
+    padding: 0px;
+  }
+
+  .marginright {
+    padding: 0px;
+  }
+
+  .gridBrief {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .gridBrief h3 {
+    font-weight: bold;
+    font-size: 0.7em;
+    margin-bottom: 0;
+  }
+
+  .gridBrief p {
+    text-transform: uppercase;
+    font-size: 0.5em;
+    font-weight: bold;
+  }
+
+  .gridBrief {
+    font-weight: bold;
+  }
+
+  .inside {
+    text-align: left;
+  }
+  /* 480 AND SMALLER neque section */
+
+  .neque {
+    min-height: 40vh;
+    width: 100%;
+    text-align: center;
+    padding: 70px 10px 100px 10px;
+    margin: 0 auto;
+
+  }
+
+  .contButton {
+    text-transform: uppercase;
+    padding: 20px;
+    color: white;
+    background-color: black;
+    max-height: 100px;
+    max-width: 250px;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+
+  /* 480 AND SMALLER sales ads section */
+
+  .sales {
+    background-color: rgba(211,211,211,0.4);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .tenDollars, .ntDollars, .nnDollars {
+      margin: 20px auto;
+      text-align: center;
+      padding: 20px;
+      min-height: 50vh;
+      width: 100%;
+      position: relative;
+  }
+
+  .ntDollars {
+    background-color: black;
+    color: white;
+    padding: 20px;
+  }
+
+  .tenDollars, .nnDollars {
+    background-color: white;
+
+  }
+
+  .cost, .cost2 {
+    border-bottom: 2px solid rgba(211,211,211,0.8);
+    padding-bottom: 20px;
+    padding-top: 10px;
+    max-width: 150px;
+    margin: 0 auto;
+    min-height: 150px;
+  }
+
+  #day {
+    font-size: 0.5em;
+    position: absolute;
+    bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+
+  .price {
+    display: flex;
+    max-width: 100px;
+    margin: 0 auto;
+    margin-left: 5px;
+    text-align: center;
+    min-height: 50px;
+    justify-content: space-between;
+  }
+
+  .paras {
+    text-transform: uppercase;
+    font-size: 0.5em;
+    text-align: left;
+    margin-left: 30px;
+    padding: 10px 0 20px 0;
+  }
+  .paras p {
+    margin-bottom: 15px;
+  }
+
+  .b {
+    font-size: 3.7em;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .c {
+    padding-top: 40px;
+  }
+
+  .cost p, .cost2 p {
+    margin-right: 70px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+
+  }
+
+  .circle {
+    max-width: 50px;
+    min-height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    text-align: center;
+    padding-top: 15px;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    left: 60%;
+    top: 500px;
+    z-index: 1;
+
+  }
+
+  .lorumButton {
+    min-height: 50px;
+    min-width: 150px;
+    line-height: 50px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 0.8em;
+    margin: 0 auto;
+    font-size: 0.8em;
+
+  }
+
+  .lorumButton2 {
+    min-height: 50px;
+    line-height: 50px;
+    min-width: 150px;
+    font-size: 0.8em;
+    text-align: center;
+    background-color: white;
+    color: black;
+    margin: 0 auto;
+  }
+
+  .lorumButton, .lorumButton2 {
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+      left: 20px;
+      right: 20px;
+      bottom: 40px;
+  }
+  }
+
+  /* 480 AND SMALLER short lorum section with log and button */
+
+  .ffContact {
+    background-color: white;
+    width: 100%;
+    height: 60vh;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+  }
+
+.clorum, .florum {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+
+  .clorum div {
+    min-height: 50px;
+    max-width: 250px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: black;
+    color: white;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-size: 0.8em;
+
+
+  }
+
+  /* 480 AND SMALLER footer */
+  footer {
+    color: white;
+    background-color: black;
+    min-height: 50vh;
+
+  }
+
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+
+  }
+
+  .iconz {
+    display: flex;
+    justify-content: space-between;
+    max-width: 250px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    flex-direction: column;
+  }
+
+  .iconz p {
+    padding-left: 10px;
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .blah {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+
+  }
+
+  .blah img {
+    max-height: 50px;
+    max-width: 50px;
+    margin: 0 auto;
+
+  }
+
+  .la {
+    padding-left: 20px;
+  }
+
+  i {
+    margin-left: 0;
+  }
+
+  .socMed {
+    padding-top: 15px;
+  }
+
+  .list {
+    max-width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0.7em;
+    margin-top: 15px;
+  }
+
+  .list li {
+    padding-top: 15px;
+  }
+
+  .list ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .list p {
+    text-transform: uppercase;
+    color: darkgrey;
+  }
+
+  .cap {
+    text-transform: uppercase;
+
+  }
+
+  footer li {
+    padding-top: 3px;
+  }
+
+
+  footer li:hover {
+    color: grey;
+    font-size: 1.2em;
+  }
+
+  .subscribe {
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    color: darkgrey;
+    font-size: 0.7em;
+  }
+
+  input {
+    min-width: 250px;
+    max-height: 50px;
+    line-height: 100px;
+    padding-left: 20px;
+    color: white;
+    background-color: black;
+    border: 2px darkgrey solid;
+    margin: 0 auto;
+    margin-top: 10px;
+
+  }
+
+  .subscribe div {
+    max-width: 125px;
+    height: 50px;
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    line-height: 50px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
 
 }
