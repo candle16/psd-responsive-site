@@ -188,7 +188,7 @@ nav li {
   min-width: 50%;
   display: flex;
   flex-direction: column-reverse;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 .gridPic1, .gridPic2, .gridPic3, .gridPic4 {
@@ -255,13 +255,13 @@ nav li {
 .inside {
   text-align: right;
 }
-/* neque section */
+/* 940 and OVER neque section */
 
 .neque {
   min-height: 40vh;
   width: 100%;
   text-align: center;
-  padding: 70px 0 100px 0;
+  padding: 100px 100px 100px 100px;
   margin: 0 auto;
 
 }
@@ -277,7 +277,7 @@ nav li {
   margin-top: 40px;
 }
 
-/* sales ads section */
+/* 940 and over sales ads section */
 
 .sales {
   background-color: rgba(211,211,211,0.4);
@@ -322,9 +322,6 @@ nav li {
   bottom: 10px;
   left:70px;
 }
-/* .cost {
-  margin-top: 60px;
-} */
 
 .price {
   display: flex;
@@ -415,28 +412,28 @@ nav li {
     bottom: 40px;
 }
 
-/* short lorum section with log and button */
+/* 940px and OVER short lorum section with log and button */
 
 .ffContact {
   background-color: white;
   width: 100%;
-  height: 40vh;
+  min-height: 40vh;
   margin: 0 auto;
   text-align: left;
-  padding: 30px;
+  padding: 100px;
   display: flex;
   justify-content: space-around;
 
 }
 
 .florum {
-  padding-top: 30px;
+  /* padding-top: 30px; */
   margin-left: 20px;
 }
 
 .clorum {
   margin-left: 100px;
-  padding-top: 30px;
+  /* padding-top: 30px; */
 }
 
 
@@ -453,7 +450,7 @@ nav li {
 
 }
 
-/* footer */
+/* 940 and over footer */
 footer {
   color: white;
   background-color: black;
@@ -465,6 +462,7 @@ footer {
   flex-direction: row;
   padding-top: 60px;
 }
+
 .iconz {
   display: flex;
   justify-content: space-between;
@@ -581,17 +579,1234 @@ input {
 
 /*--MEDIA QUERIES-->*/
 
-/* Portrait tablet and small desktops */
+/* FIRST BREAKPOINT/SECOND-BIGGEST VERSION - Portrait tablet and small desktops */
 @media (max-width: 940px) {
 
+  body {
+    font-family: 'Poppins', sans-serif;
+    padding: 0 50px 0 50px;
+    background-color: rgba(211,211,211,0.7);
+  }
+
+  header {
+    padding: 50px;
+  }
+
+  header, .consectetur, .neque, .ffContact {
+    background-color: white;
+  }
+
+  nav img {
+    max-width: 50px;
+    max-height: 50px;
+    margin-left: 10px;
+    margin-top: 15px;
+
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    width: calc(100% - 30px);
+    margin: 0 auto;
+  }
+
+  nav ul {
+    list-style-type: none;
+    padding:0;
+    margin: 0;
+    margin-right: 20px;
+
+  }
+
+  nav li {
+    padding: 10px;
+    height: 40px;
+    width: 60px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.7em;
+
+  }
+
+  .navB {
+  margin-left: 10px;
+  }
+
+  .titleNum {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    margin-bottom: 20px;
+  }
+
+  #lorem {
+    font-size: 2em;
+    margin: 0;
+    font-weight: bold;
+  }
+
+  .num {
+    font-size: 6em;
+    color: lightgrey;
+    font-weight: bold;
+    padding-top: 5%;
+  }
+
+  .plantPic {
+    min-height: 300px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+
+  .pic {
+    background-image: url(images/plantComp.jpg);
+    height: 95%;
+    width: calc(100% - 5px);
+    margin: 0 auto;
+    background-size: cover;
+  }
+
+  .edges {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .edges p {
+    border-bottom: 3px solid black;
+    min-width: 50px;
+    padding-bottom: 2px;
+  }
+
+  .edges p:nth-child(2) {
+    text-align: right;
+  }
+
+  /* <!--940 to 768 consectetur section--> */
+
+  .consectetur {
+    padding: 20px 10px 0px 10px;
+
+  }
+
+  .heading {
+      max-width: 400px;
+      text-align: center;
+      margin: 0 auto;
+  }
+
+  .headingcons {
+    font-weight: bold;
+    margin: 0;
+    padding: 1.5px;
+  }
+
+  .consectetur h2, .epertize h2 {
+    font-size: 2.5em;
+    margin: 0;
+    padding: 0;
+  }
+
+  .headingpara {
+    margin: 0;
+    padding:1.5px;
+  }
+
+  .iconGrid {
+    padding: 50px 0 50px 0;
+    max-width: 40%;
+    margin: 0 auto;
+  }
+
+  .gridbold {
+    font-weight: bold;
+  }
+
+  .box {
+    display: flex;
+    max-width: 90%;
+    max-height: 50%;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .box img {
+    margin-right: 10px;
+    margin-left: 20px;
+    padding-top: 30px;
+  }
+
+  .gridBox1, .gridBox2 {
+    display: block;
+  }
+
+  .box p {
+    max-width: 200px;
+  }
+  /* 940 to 768- epertize section with the pic and text boxes */
+
+  .epertizeGrid {
+      padding: 50px 10px 50px 10px;
+      background-color: #E6E7E8;
+  }
+
+  .epertize {
+    max-width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 40px;
+
+  }
+
+  .gridbox1a, .gridbox2a, .gridbox3, .gridbox4 {
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .twoGrid {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 50%;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+
+  .gridText {
+    /* margin-top: 0px; */
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+
+  .gridPic1, .gridPic2, .gridPic3, .gridPic4 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    min-height: 200px;
+
+  }
+
+  .gridPic1 {
+    background-image: url("images/christopher-gower-291240.jpg");
+    width: 100%;
+    background-size: cover;
+    margin: 0;
+  }
+
+  .gridPic2 {
+    background-image: url("images/christopher-gower-291240.jpg");
+    width: 100%;
+    background-size: cover;
+    margin: 0;
+  }
+
+  .gridPic3 {
+    background-image: url("images/christopher-gower-291246.jpg");
+    width: 100%;
+    background-size: cover;
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
+
+  .gridPic4 {
+      background-image: url("images/christopher-gower-291239.jpg");
+      width: 100%;
+      background-size: cover;
+      margin: 0;
+  }
+
+  .marginleft {
+    padding: 0px;
+    margin-top: 0;
+
+  }
+
+  .marginright {
+    padding: 0px;
+  }
+
+  .gridBrief {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .gridBrief h3 {
+    font-weight: bold;
+    font-size: 0.7em;
+    margin-bottom: 0;
+  }
+
+  .gridBrief p {
+    text-transform: uppercase;
+    font-size: 0.5em;
+    font-weight: bold;
+  }
+
+  .gridBrief {
+    font-weight: bold;
+  }
+
+  .inside {
+    text-align: left;
+  }
+  /* 940 to 768 neque section */
+
+  .neque {
+    min-height: 40vh;
+    width: 100%;
+    text-align: center;
+    padding: 75px 50px 75px 50px;
+    margin: 0 auto;
+
+  }
+
+  .contButton {
+    text-transform: uppercase;
+    padding: 20px;
+    color: white;
+    background-color: black;
+    max-height: 100px;
+    max-width: 250px;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+
+  /* 940 to 768 sales ads section */
+
+  .sales {
+    background-color: rgba(211,211,211,0.4);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .tenDollars, .ntDollars, .nnDollars {
+      margin: 20px auto;
+      text-align: center;
+      padding: 20px;
+      min-height: 50vh;
+      width: 320px;
+      position: relative;
+  }
+
+  .ntDollars {
+    background-color: black;
+    color: white;
+    padding: 20px;
+  }
+
+  .tenDollars, .nnDollars {
+    background-color: white;
+
+  }
+
+  .cost, .cost2 {
+    border-bottom: 2px solid rgba(211,211,211,0.8);
+    padding-bottom: 20px;
+    padding-top: 10px;
+    max-width: 150px;
+    margin: 0 auto;
+    min-height: 150px;
+  }
+
+  #day {
+    font-size: 0.5em;
+    position: absolute;
+    bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+
+  .price {
+    display: flex;
+    max-width: 100px;
+    margin: 0 auto;
+    margin-left: 5px;
+    text-align: center;
+    min-height: 50px;
+    justify-content: space-between;
+  }
+
+  .paras {
+    text-transform: uppercase;
+    font-size: 0.5em;
+    text-align: left;
+    max-width: 50%;
+    margin-left: 30px;
+    padding: 10px 0 20px 0;
+  }
+
+  .paras p {
+    margin-bottom: 15px;
+  }
+
+  .b {
+    font-size: 3.7em;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .c {
+    padding-top: 40px;
+  }
+
+  .cost p, .cost2 p {
+    margin-right: 70px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+
+  }
+
+  .circle {
+    max-width: 0;
+    min-height: 0;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    text-align: center;
+    padding-top: 15px;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    left: 60%;
+    top: 500px;
+    z-index: 1;
+
+  }
+
+  .lorumButton {
+    min-height: 50px;
+    min-width: 150px;
+    line-height: 50px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 0.8em;
+    margin: 0 auto;
+    font-size: 0.8em;
+
+  }
+
+  .lorumButton2 {
+    min-height: 50px;
+    line-height: 50px;
+    min-width: 150px;
+    font-size: 0.8em;
+    text-align: center;
+    background-color: white;
+    color: black;
+    margin: 0 auto;
+  }
+
+  .lorumButton, .lorumButton2 {
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+      left: 20px;
+      right: 20px;
+      bottom: 40px;
+  }
+
+
+  /* 940 to 780  short lorum section with log and button */
+
+  .ffContact {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 75px 50px 75px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+  }
+
+
+  .clorum, .florum {
+  margin-left: 0;
+  margin-right: 0;
+  }
+
+  .clorum {
+    margin-top: -30px;
+  }
+
+
+  .clorum div {
+    min-height: 50px;
+    max-width: 250px;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-size: 0.8em;
+
+
+  }
+
+  /* ~940 to 768 footer */
+  footer {
+    color: white;
+    background-color: black;
+    min-height: 50vh;
+
+  }
+
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+
+  }
+
+  .iconz {
+    display: flex;
+    justify-content: space-between;
+    max-width: 250px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    flex-direction: column;
+  }
+
+  .iconz p {
+    padding-left: 10px;
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .blah {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+
+  }
+
+  .blah img {
+    max-height: 50px;
+    max-width: 50px;
+    margin: 0 auto;
+
+  }
+
+  .la {
+    padding-left: 20px;
+  }
+
+  i {
+    margin-left: 0;
+  }
+
+  .socMed {
+    padding-top: 15px;
+  }
+
+  .list {
+    max-width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0.7em;
+    margin-top: 15px;
+  }
+
+  .list li {
+    padding-top: 15px;
+  }
+
+  .list ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .list p {
+    text-transform: uppercase;
+    color: darkgrey;
+  }
+
+  .cap {
+    text-transform: uppercase;
+
+  }
+
+  footer li {
+    padding-top: 3px;
+  }
+
+
+  footer li:hover {
+    color: grey;
+    font-size: 1.2em;
+  }
+
+  .subscribe {
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    color: darkgrey;
+    font-size: 0.7em;
+  }
+
+  input {
+    min-width: 250px;
+    max-height: 50px;
+    line-height: 100px;
+    padding-left: 20px;
+    color: white;
+    background-color: black;
+    border: 2px darkgrey solid;
+    margin: 0 auto;
+    margin-top: 10px;
+
+  }
+
+  .subscribe div {
+    max-width: 125px;
+    height: 50px;
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    line-height: 50px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+
+
 }
 
-/* Landscape phone to portrait tablet */
+/* SECOND-SMALLEST BREAKPOINT 768px to 480px: Landscape phone to portrait tablet */
 @media (max-width: 768px) {
 
+  body {
+    font-family: 'Poppins', sans-serif;
+    padding: 0 35px 0 35px;
+    background-color: rgba(211,211,211,0.7);
+  }
+
+  header {
+    padding: 30px;
+  }
+
+  header, .consectetur, .neque, .ffContact {
+    background-color: white;
+  }
+
+  nav img {
+    max-width: 50px;
+    max-height: 50px;
+    margin-left: 10px;
+    margin-top: 15px;
+
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    width: calc(100% - 20px);
+    margin: 0 auto;
+  }
+
+  nav ul {
+    list-style-type: none;
+    padding:0;
+    margin: 0;
+    margin-right: 20px;
+
+  }
+
+  nav li {
+    padding: 10px;
+    height: 40px;
+    width: 60px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.7em;
+
+  }
+
+  .navB {
+  margin-left: 10px;
 }
 
-/* LANDSCAPE PHONES AND SMALLER */
+  .titleNum {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    margin-bottom: 20px;
+  }
+
+  #lorem {
+    font-size: 2em;
+    margin: 0;
+    font-weight: bold;
+  }
+
+  .num {
+    font-size: 6em;
+    color: lightgrey;
+    font-weight: bold;
+    padding-top: 5%;
+  }
+
+  .plantPic {
+    min-height: 300px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+
+  .pic {
+    background-image: url(images/plantComp.jpg);
+    height: 95%;
+    width: calc(100% - 5px);
+    margin: 0 auto;
+    background-size: cover;
+  }
+
+  .edges {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .edges p {
+    border-bottom: 3px solid black;
+    min-width: 50px;
+    padding-bottom: 2px;
+  }
+
+  .edges p:nth-child(2) {
+    text-align: right;
+  }
+
+  /* <!--768 down to to 480 consectetur section--> */
+
+  .consectetur {
+    padding: 20px 10px 0px 10px;
+
+  }
+
+  .heading {
+      max-width: 400px;
+      text-align: center;
+      margin: 0 auto;
+  }
+
+  .headingcons {
+    font-weight: bold;
+    margin: 0;
+    padding: 1.5px;
+  }
+
+  .consectetur h2, .epertize h2 {
+    font-size: 2.5em;
+    margin: 0;
+    padding: 0;
+  }
+
+  .headingpara {
+    margin: 0;
+    padding:1.5px;
+  }
+
+  .iconGrid {
+    padding: 50px 0 50px 0;
+    max-width: 50%;
+    margin: 0 auto;
+  }
+
+  .gridbold {
+    font-weight: bold;
+  }
+
+  .box {
+    display: flex;
+    max-width: 90%;
+    max-height: 50%;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .box img {
+    margin-right: 10px;
+    margin-left: 20px;
+    padding-top: 10px;
+  }
+
+  .gridBox1, .gridBox2 {
+    display: block;
+  }
+
+  /* 768 down to 481 - epertize section with the pic and text boxes */
+
+  .epertizeGrid {
+      padding: 50px 10px 50px 10px;
+      background-color: #E6E7E8;
+  }
+
+  .epertize {
+    max-width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 40px;
+
+  }
+
+  .gridbox1a, .gridbox2a, .gridbox3, .gridbox4 {
+    display:flex;
+    flex-direction: column;
+  }
+
+  .twoGrid {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 50%;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+
+  .gridText {
+    margin-top: 35px;
+    /* min-width: 50%; */
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+
+  .gridPic1, .gridPic2, .gridPic3, .gridPic4 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    min-height: 200px;
+  }
+
+  .gridPic1 {
+    background-image: url("images/christopher-gower-291240.jpg");
+    width: 100%;
+    background-size: cover;
+    margin: 0;
+  }
+
+  .gridPic2 {
+    background-image: url("images/christopher-gower-291240.jpg");
+    width: 100%;
+    background-size: cover;
+    margin: 0;
+  }
+
+  .gridPic3 {
+    background-image: url("images/christopher-gower-291246.jpg");
+    width: 100%;
+    background-size: cover;
+    margin-top: 25px;
+    margin-bottom: 0;
+  }
+
+  .gridPic4 {
+      background-image: url("images/christopher-gower-291239.jpg");
+      width: 100%;
+      background-size: cover;
+      margin: 0;
+  }
+
+  .marginleft {
+    padding: 0px;
+    margin-top: 0;
+  }
+
+  .marginright {
+    padding: 0px;
+  }
+
+  .gridbox3 {
+    margin-top: 70px;
+  }
+
+  .gridBrief {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .gridBrief h3 {
+    font-weight: bold;
+    font-size: 0.7em;
+    margin-bottom: 0;
+  }
+
+  .gridBrief p {
+    text-transform: uppercase;
+    font-size: 0.5em;
+    font-weight: bold;
+  }
+
+  .gridBrief {
+    font-weight: bold;
+  }
+
+  .inside {
+    text-align: left;
+  }
+  /* 768 down to 481 AND SMALLER neque section */
+
+  .neque {
+    min-height: 40vh;
+    width: 100%;
+    text-align: center;
+    padding: 75px 50px 75px 50px;
+    margin: 0 auto;
+
+  }
+
+  .contButton {
+    text-transform: uppercase;
+    padding: 20px;
+    color: white;
+    background-color: black;
+    max-height: 100px;
+    max-width: 250px;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+
+  /* 768 to 481 AND SMALLER sales ads section */
+
+  .sales {
+    background-color: rgba(211,211,211,0.4);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .tenDollars, .ntDollars, .nnDollars {
+      margin: 20px auto;
+      text-align: center;
+      padding: 20px;
+      min-height: 50vh;
+      width: 320px;
+      position: relative;
+  }
+
+  .ntDollars {
+    background-color: black;
+    color: white;
+    padding: 20px;
+  }
+
+  .tenDollars, .nnDollars {
+    background-color: white;
+
+  }
+
+  .cost, .cost2 {
+    border-bottom: 2px solid rgba(211,211,211,0.8);
+    padding-bottom: 20px;
+    padding-top: 10px;
+    max-width: 150px;
+    margin: 0 auto;
+    min-height: 150px;
+  }
+
+  #day {
+    font-size: 0.5em;
+    position: absolute;
+    bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+
+  .price {
+    display: flex;
+    max-width: 100px;
+    margin: 0 auto;
+    margin-left: 5px;
+    text-align: center;
+    min-height: 50px;
+    justify-content: space-between;
+  }
+
+  .paras {
+    text-transform: uppercase;
+    font-size: 0.5em;
+    text-align: left;
+    max-width: 50%;
+    margin-left: 30px;
+    padding: 10px 0 20px 0;
+  }
+
+  .paras p {
+    margin-bottom: 15px;
+  }
+
+  .b {
+    font-size: 3.7em;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .c {
+    padding-top: 40px;
+  }
+
+  .cost p, .cost2 p {
+    margin-right: 70px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+
+  }
+
+  .circle {
+    max-width: 0;
+    min-height: 0;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    text-align: center;
+    padding-top: 15px;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    left: 60%;
+    top: 500px;
+    z-index: 1;
+
+  }
+
+  .lorumButton {
+    min-height: 50px;
+    min-width: 150px;
+    line-height: 50px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 0.8em;
+    margin: 0 auto;
+    font-size: 0.8em;
+
+  }
+
+  .lorumButton2 {
+    min-height: 50px;
+    line-height: 50px;
+    min-width: 150px;
+    font-size: 0.8em;
+    text-align: center;
+    background-color: white;
+    color: black;
+    margin: 0 auto;
+  }
+
+  .lorumButton, .lorumButton2 {
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+      left: 20px;
+      right: 20px;
+      bottom: 40px;
+  }
+
+
+  /* 780 AND SMALLER short lorum section with log and button */
+
+  .ffContact {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 75px 50px 75px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+  }
+
+
+  .clorum, .florum {
+  margin-left: 0;
+  margin-right: 0;
+
+  }
+
+  .clorum {
+    margin-top: -30px;
+  }
+
+
+  .clorum div {
+    min-height: 50px;
+    max-width: 250px;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-size: 0.8em;
+
+
+  }
+
+  /* ~780 to 480 footer */
+  footer {
+    color: white;
+    background-color: black;
+    min-height: 50vh;
+
+  }
+
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+
+  }
+
+  .iconz {
+    display: flex;
+    justify-content: space-between;
+    max-width: 250px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    flex-direction: column;
+  }
+
+  .iconz p {
+    padding-left: 10px;
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .blah {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+
+  }
+
+  .blah img {
+    max-height: 50px;
+    max-width: 50px;
+    margin: 0 auto;
+
+  }
+
+  .la {
+    padding-left: 20px;
+  }
+
+  i {
+    margin-left: 0;
+  }
+
+  .socMed {
+    padding-top: 15px;
+  }
+
+  .list {
+    max-width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0.7em;
+    margin-top: 15px;
+  }
+
+  .list li {
+    padding-top: 15px;
+  }
+
+  .list ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .list p {
+    text-transform: uppercase;
+    color: darkgrey;
+  }
+
+  .cap {
+    text-transform: uppercase;
+
+  }
+
+  footer li {
+    padding-top: 3px;
+  }
+
+
+  footer li:hover {
+    color: grey;
+    font-size: 1.2em;
+  }
+
+  .subscribe {
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    color: darkgrey;
+    font-size: 0.7em;
+  }
+
+  input {
+    min-width: 250px;
+    max-height: 50px;
+    line-height: 100px;
+    padding-left: 20px;
+    color: white;
+    background-color: black;
+    border: 2px darkgrey solid;
+    margin: 0 auto;
+    margin-top: 10px;
+
+  }
+
+  .subscribe div {
+    max-width: 125px;
+    height: 50px;
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    line-height: 50px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+
+
+
+
+}
+
+
+/* 480px AND BELOW: LANDSCAPE PHONES AND SMALLER */
 @media (max-width: 480px) {
 
   body {
@@ -697,10 +1912,12 @@ input {
 
   .consectetur {
     padding: 20px 10px 0px 10px;
+
   }
 
   .heading {
       max-width: 400px;
+      text-align: center;
   }
 
   .headingcons {
@@ -756,22 +1973,24 @@ input {
   }
 
   .epertize {
-    max-width: 50%;
+    max-width: 60%;
     margin: 0 auto;
     text-align: center;
-    padding-bottom: 20px;
+    margin-bottom: 30px;
+
 
   }
 
   .gridbox1a, .gridbox2a, .gridbox3, .gridbox4 {
     display:flex;
-    flex-direction:column;
-
+    flex-direction: column;
   }
 
   .twoGrid {
     padding-left: 15px;
     padding-right: 15px;
+    max-width: 90%;
+    margin: 0 auto;
   }
 
   .gridText {
@@ -806,7 +2025,11 @@ input {
     background-image: url("images/christopher-gower-291246.jpg");
     width: 100%;
     background-size: cover;
-    margin-top: 15px;
+    margin: 0;
+  }
+
+  .gridbox3 {
+    margin-top: 70px;
   }
 
   .gridPic4 {
@@ -818,10 +2041,13 @@ input {
 
   .marginleft {
     padding: 0px;
+    margin-top: 0px;
   }
 
   .marginright {
     padding: 0px;
+    margin-top: 0px;
+
   }
 
   .gridBrief {
@@ -969,7 +2195,7 @@ input {
     font-family: 'Roboto', sans-serif;
     position: absolute;
     left: 60%;
-    top: 500px;
+    top: 34%;
     z-index: 1;
 
   }
@@ -1006,14 +2232,14 @@ input {
       right: 20px;
       bottom: 40px;
   }
-  }
+
 
   /* 480 AND SMALLER short lorum section with log and button */
 
   .ffContact {
     background-color: white;
     width: 100%;
-    height: 60vh;
+    min-height: 80vh;
     margin: 0 auto;
     text-align: center;
     padding: 30px;
@@ -1023,9 +2249,15 @@ input {
 
   }
 
+.florum {
+  padding-top: 0;
+}
+
 .clorum, .florum {
   margin-left: 0;
   margin-right: 0;
+  max-width: 95%;
+  max-height: 95%;
 }
 
 
